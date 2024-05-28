@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #040924;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.hide {
+    display: none;
+}
+
+body, input, form, fieldset, input::placeholder, button {
+    font-family: 'Roboto', sans-serif;
+    color: #0C3440;
+    font-size: 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.card {
+    background: white;
+    width: 428px;
+    border-radius: 6px;
+    padding: 3rem 4rem 4rem 4rem;
+    margin: 0 auto;
+}
+
+form fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+fieldset legend {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 40px;
+    margin-bottom: 1rem;
+
+}
+
+form label {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 18px
+}
+
+form input {
+    height: 3.25rem;
+    border-radius: 4px;
+    border: 1px solid rgba(73, 80, 87, 0.30);
+    background: #DCE2E9;
+    padding: 1rem;
+    width: 100%;
+}
+
+
+form input:focus {
+    outline: 2px solid #02799D;
+}
+
+form input::placeholder {
+    color: rgba(73, 80, 87, 0.50);
+}
+
+form button {
+    margin-top: 3rem;
+    font-weight: 700;
+    line-height: 20px;
+    border-radius: 4px;
+    background: #02799D;
+    border: none;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #025D7A;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.modal-wrapper {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.70);
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    position: relative;
+}
+
+.modal button {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+    height: 14px;
+}
+
+.modal button:hover {
+    transform: scale(1.1);
+}
+
+.modal-wrapper.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.alert-error {
+    background: #F03E3E;
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0.5rem;
+    font-weight: bold;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.alert-error.open {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.5s;
+}
+
+@media (max-width: 432px) {
+    #container {
+        padding: 2rem;
+    }
+
+    main {
+        padding: 1.5rem 2rem 2rem 2rem;
+    }
+}

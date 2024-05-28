@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/main.js" defer></script>
+    <title>IMC</title>
+</head>
+<body>
+
+    <div class="alert-error">
+        Digite números válidos
+    </div>
+
+    <div id="container">
+        <main class="card">
+            <div class="screen1">
+                <form>
+                    <fieldset>
+                        <legend>Cálculo de IMC</legend>
+                        <label for="peso">Peso (kg)</label>
+                        <input type="number" id="peso" placeholder="60">
+                        <label for="altura">Altura (cm)</label>
+                        <input type="number" id="altura" placeholder="170">
+                        <button>Calcular IMC<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.1685 8.26205L14.3589 8.26213M14.3589 8.26213L9.64488 3.54808M14.3589 8.26213L9.64488 12.9762" stroke="white" stroke-width="1.20972" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg></button>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <div class="modal-wrapper">
+        <div class="modal card">
+            <button class="close"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#0C3440" fill-opacity="0.6"/>
+                </svg>
+                </button>
+            <h1>Seu IMC é de 28</h1>
+        </div>
+    </div>
+</body>
+</html>
