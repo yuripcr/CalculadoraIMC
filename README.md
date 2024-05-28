@@ -1,4 +1,4 @@
-<h1 align="center">Calculadora de</h1>
+<h1 align="center">Calculadora de IMC</h1>
 
 <p align="center">
 Esse projeto foi desenvolvido usando HTML, CSS e JavaScript <br/>
@@ -18,5 +18,5 @@ Esse projeto foi desenvolvido usando HTML, CSS e JavaScript <br/>
 <br>
 
 <p align="center">
-  <img src=".github/screen-error.jpgs" width="100%">
+  <img src=".github/screen-error.jpg" width="100%">
 </p>
