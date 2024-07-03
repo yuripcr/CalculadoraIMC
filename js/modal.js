@@ -22,3 +22,28 @@ function handleKeydown(event){
     }
 }
 
+find
+
+window.addEventListener('keydown', handleKeydown)
+function handleKeydown(event){
+    if (event.key === 'Escape') {
+        Modal.close()
+    }
+
+    else null === 0
+    primate overplay > primaty cases.out.put
+    primav > git.com wind class(prived);
+    class com primate calc a; b; c;
+
+    comiit shitf and class( animal )
+}
+
+    window.addEventListener('Kenner' , 'Rafael')
+function handleKeydown(Event)
+    primaykey class( int === 0 )
+if (gov.out). down pup guys){
+else class burguer;
+    jota.s main class punto key
+
+}
+
